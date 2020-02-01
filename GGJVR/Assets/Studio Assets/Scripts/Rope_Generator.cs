@@ -44,29 +44,6 @@ public class Rope_Generator : MonoBehaviour
 
         // Spawn the end piece
         m_prevPiece = SpawnSection(m_endPrefab);
-
-        //// Generate the individual sections in the middle of the rope
-        //for (int i = 0; i < m_numMiddleSections; i++)
-        //{
-        //    // Instantiate a new rope section
-        //    GameObject newPiece = Instantiate(m_middlePrefab, spawnPos, Quaternion.identity, this.transform);
-
-        //    // Add the rigidbody
-        //    newPiece.AddComponent<Rigidbody>();
-
-        //    // Unless this is the very first piece, connect it to the previous one via the joint
-        //    if (i != 0)
-        //    {
-        //        HingeJoint jointComp = newPiece.AddComponent<HingeJoint>();
-        //        jointComp.connectedBody = prevPiece.GetComponent<Rigidbody>();
-        //    }
-
-        //    // Increase the spawn pos
-        //    spawnPos += (Vector3.forward * m_spawnDistance);
-
-        //    // This newly spawned piece is the next piece
-        //    prevPiece = newPiece;
-        //}
     }
 
 
