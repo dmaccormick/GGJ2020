@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.ggjvr.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\Gradlab VR Station\\Documents\\GGJ2020\\GGJ2020\\GGJVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "GGJVR [Testing]"
+        }
+      }
+    }
+  ]
+}
