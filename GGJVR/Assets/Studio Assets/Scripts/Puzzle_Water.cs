@@ -32,6 +32,7 @@ public class Puzzle_Water : MonoBehaviour
 
         if (puzzleFinished)
         {
+            Debug.Log("Water puzzle finished!");
             //Allow for bottom of fridge to open
             //Show 100% completion on UI screen
         }
