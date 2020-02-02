@@ -33,6 +33,9 @@ public class Rope_Generator : MonoBehaviour
     //--- Methods ---//
     public void GenerateRope()
     {
+        // Clear the rope first
+        ClearRope();
+
         // Spawn the initial piece
         m_prevPiece = SpawnSection(m_startPrefab);
 
@@ -44,6 +47,20 @@ public class Rope_Generator : MonoBehaviour
 
         // Spawn the end piece
         m_prevPiece = SpawnSection(m_endPrefab);
+    }
+    
+    public void ClearRope()
+    {
+        // Loop through all of the children and destroy them
+        for (int i = 0; i < this.transform.childCount; i++)
+        {
+            DestroyImmediate(this.transform.GetChild(i).gameObject);
+            i--;
+        }
+
+        // Reset the other information
+        this.m_spawnPos = this.transform.position;
+        this.m_prevPiece = null;
     }
 
 
