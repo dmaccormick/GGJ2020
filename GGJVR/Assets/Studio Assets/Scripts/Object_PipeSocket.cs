@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Object_PipeSocket : MonoBehaviour
 {
+    [Tooltip("Select two bools to enable to pick correct answer.")]
     public List<bool> colliderBooleans = new List<bool>();
 
     public List<Collider> colliders = new List<Collider>();
@@ -23,7 +24,7 @@ public class Object_PipeSocket : MonoBehaviour
         //disable all colliders
         for (int i = 0; i < colliders.Count; i++)
         {
-                colliders[i].gameObject.SetActive(false);
+            colliders[i].enabled = false;
         }
 
         //Makes sure all colliders that need to be on, are
@@ -35,7 +36,7 @@ public class Object_PipeSocket : MonoBehaviour
         {
             if (colliderBooleans[i] == true)
             {
-                colliders[i].gameObject.SetActive(true);
+                colliders[i].enabled = true;
                 numCollidersActive++;
             }
         }
@@ -43,7 +44,10 @@ public class Object_PipeSocket : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        colliderCounter++;
+        //Check to see if the object trigger is correct = pipe
+        //Increment collider counter
+        if(other.CompareTag("Pipe"))
+            colliderCounter++;
     }
 
     //Called by the snap of the object in place
