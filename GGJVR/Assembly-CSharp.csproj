@@ -618,6 +618,14 @@
  </Reference>
 =======
     <Compile Include="Assets\Studio Assets\Scripts\Interaction_Testing.cs" />
+    <Compile Include="Assets\Studio Assets\Scripts\Object_BatterySocket.cs" />
+    <Compile Include="Assets\Studio Assets\Scripts\Object_HoseSocket.cs" />
+    <Compile Include="Assets\Studio Assets\Scripts\Object_PipeSocket.cs" />
+    <Compile Include="Assets\Studio Assets\Scripts\Object_PlantPot.cs" />
+    <Compile Include="Assets\Studio Assets\Scripts\Puzzle_Battery.cs" />
+    <Compile Include="Assets\Studio Assets\Scripts\Puzzle_Food.cs" />
+    <Compile Include="Assets\Studio Assets\Scripts\Puzzle_Oxygen.cs" />
+    <Compile Include="Assets\Studio Assets\Scripts\Puzzle_Water.cs" />
     <Compile Include="Assets\Studio Assets\Scripts\Rope_Generator.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/0_Project/GGJ2020/GGJVR/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -1210,7 +1218,11 @@
   </Target>
   -->
 <<<<<<< HEAD
+<<<<<<< HEAD
 </Project>
 =======
 </Project>
 >>>>>>> Bo
+=======
+</Project>
+>>>>>>> Alain
