@@ -4,10 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  tags:
+  - PipeSocket
   - projectile
   - FxTemporaire
-  - PipeSocket
+  - HoseSocket
   layers:
   - Default
   - TransparentFX

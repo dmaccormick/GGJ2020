@@ -15,12 +15,7 @@ public class LocketSocket : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int angleZ = (int)(this.transform.rotation.eulerAngles.z);
-        angleZ += 45;
-        int angle360 = angleZ % 360;
-        int snap = angle360 / 90;
 
-        Debug.Log(angleZ + ", " + snap);
     }
 
     public void snap()
