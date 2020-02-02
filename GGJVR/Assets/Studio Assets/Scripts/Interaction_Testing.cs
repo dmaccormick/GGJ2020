@@ -17,4 +17,19 @@ public class Interaction_Testing : MonoBehaviour
     {
         Debug.Log("OnButtonIsPressed()");
     }
+
+
+
+    //--- Freezing Interactions ---//
+    public void OnAttachedToHand(Transform _caller)
+    {
+        // Set the rigidbody to be dynamic
+        _caller.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+    }
+
+    public void OnDetachedFromHand(Transform _caller)
+    {
+        // Set the rigidbody to be kinematic
+        _caller.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+    }
 }
