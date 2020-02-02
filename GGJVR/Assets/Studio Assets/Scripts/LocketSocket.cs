@@ -54,12 +54,21 @@ public class LocketSocket : MonoBehaviour
 
         // Set the rotation with x to be 0
         this.transform.rotation = Quaternion.Euler(0.0f, newY, newZ);
+
+        lastPipeSocket.GetComponentInParent<Object_PipeSocket>().CheckForSolution();
     }
 
     public void unsnap()
     {
         this.GetComponent<Rigidbody>().isKinematic = false;
         this.transform.parent = null;
+
+        if (lastPipeSocket == null)
+        {
+            return;
+        }
+
+        lastPipeSocket.GetComponentInParent<Object_PipeSocket>().ResetSolution();
     }
 
     private void OnTriggerEnter(Collider other)

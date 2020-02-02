@@ -12,6 +12,8 @@ public class Object_PipeSocket : MonoBehaviour
     public bool socketSolved;
 
     private int numCollidersActive;
+
+    [SerializeField]
     private int colliderCounter;
 
 
@@ -50,11 +52,19 @@ public class Object_PipeSocket : MonoBehaviour
             colliderCounter++;
     }
 
+    public void IncreaseColliderCount()
+    {
+        colliderCounter++;
+    }
+
     //Called by the snap of the object in place
     public void CheckForSolution()
     {
-        if (colliderCounter == numCollidersActive)
+        if (colliderCounter >= numCollidersActive)
+        {
             socketSolved = true;
+            GameObject.FindObjectOfType<Puzzle_Water>().CheckPuzzleFinish();
+        }
     }
 
     //Called by the unsnap when object is pulled from slot
