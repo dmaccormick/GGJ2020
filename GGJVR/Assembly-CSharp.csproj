@@ -60,6 +60,7 @@
      <Compile Include="Assets\Studio Assets\Scripts\Hose_Player.cs" />
      <Compile Include="Assets\Studio Assets\Scripts\Interaction_Testing.cs" />
      <Compile Include="Assets\Studio Assets\Scripts\LocketSocket.cs" />
+     <Compile Include="Assets\Studio Assets\Scripts\Rope_Editor.cs" />
      <Compile Include="Assets\Studio Assets\Scripts\Rope_Generator.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/Gradlab VR Station/Documents/GGJ2020/GGJ2020/GGJVR/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
