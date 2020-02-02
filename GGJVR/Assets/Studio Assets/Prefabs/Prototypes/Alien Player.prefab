@@ -60,10 +60,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1000011547835092, guid: 534d2fcf558316441a41841275676807,
         type: 3}
-    - target: {fileID: 11450312, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: showDebugText
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 11401046, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: renderModelPrefab
       value: 
@@ -73,17 +69,9 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2326430, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3390842, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 11451472, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: size
-      value: 0
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11451472, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: borderThickness
@@ -91,10 +79,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11451472, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: drawWireframeWhenSelectedOnly
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11451472, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11451472, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
@@ -161,21 +145,9 @@ PrefabInstance:
       propertyPath: vertices.Array.data[7].z
       value: 1.1500001
       objectReference: {fileID: 0}
-    - target: {fileID: 11451472, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: vertices.Array.data[4].y
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 11451472, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: vertices.Array.data[5].y
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 11451472, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: vertices.Array.data[6].y
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 11451472, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: vertices.Array.data[7].y
-      value: 0.01
+    - target: {fileID: 2326430, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}

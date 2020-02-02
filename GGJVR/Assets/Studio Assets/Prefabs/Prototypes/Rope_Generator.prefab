@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1107154520227100121}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.782, y: 2, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -43,11 +43,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d707c5bfd7c1240469e303d861fb7d2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_startPrefab: {fileID: 7795719077016327652, guid: 286505f65b288f64d87ea5669bf9ab8a,
+  m_startPrefab: {fileID: 7795719077016327652, guid: 5630020bf5d85f54faaebbb182c03d69,
     type: 3}
   m_middlePrefab: {fileID: 2628021597517827210, guid: 55c61e66e3418dd4aa10d350dce255c8,
     type: 3}
-  m_endPrefab: {fileID: 7795719077016327652, guid: 286505f65b288f64d87ea5669bf9ab8a,
+  m_endPrefab: {fileID: 7795719077016327652, guid: 99b2ad90a64f26e45be527220809e5c1,
     type: 3}
-  m_spawnDistance: 0.11
+  m_spawnDistance: 0.25
   m_numMiddleSections: 20
