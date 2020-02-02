@@ -24,7 +24,7 @@ public class Object_HoseSocket : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.name == "Hose Socket" + answerNumber)
+        if (other.name == "Hose" + answerNumber)
             hasCorrectHose = true;
 
         oxygenController.UpdateSocketStatus(answerNumber);
